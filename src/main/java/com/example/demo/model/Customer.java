@@ -1,7 +1,12 @@
 package com.example.demo.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Customer {
     private static int idCounter = 0; // For auto-generating unique customerId
+    @Id
     private int customerId;
     private String customerName;
     private CustomerStatus customerStatus;

@@ -1,5 +1,7 @@
 package com.example.demo.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import javax.persistence.*;
 
 @Entity
@@ -50,14 +52,3 @@ public class FlightBooking {
     }
 }
 
-@Entity
-@Table(name = "customers")
-public class Customer {
-    // Define the com.example.demo.model.Customer entity here
-}
-
-@Entity
-@Table(name = "flights")
-public class Flight {
-    // Define the com.example.demo.model.Flight entity here
-}
