@@ -1,21 +1,20 @@
 package com.example.demo.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import javax.persistence.*;
+import jakarta.persistence.*;
+
 
 @Entity
 public class FlightBooking {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int bookingId;
+    private Integer bookingId;
 
     @Column(nullable = false)
-    private int customerId;
+    private Integer customerId;
 
     @Column(nullable = false)
-    private int flightId;
+    private Integer flightId;
 
     // Empty constructor
     public FlightBooking() {}

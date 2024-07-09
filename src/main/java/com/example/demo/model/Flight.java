@@ -9,9 +9,9 @@ import jakarta.persistence.Id;
 public class Flight {
 @Id
 @GeneratedValue(strategy= GenerationType.IDENTITY)
-private Integer id;
+//private Integer id;
     // Private member variables
-    private static Integer idCounter = 0;
+   // private static Integer idCounter = 0;
     private Integer flightId;
     private String flightNumber;
     private String aircraft;
@@ -19,10 +19,10 @@ private Integer id;
     private Integer flightMileage;
 
     // Empty constructor (needed by Hibernate)
-    public Flight() {
+    //public Flight() {
         // Initialize flightId with a unique identifier
-        this.flightId = ++idCounter;
-    }
+       // this.flightId = ++idCounter;
+    //}
 
     // Parameterized constructor
     public Flight(String flightNumber, String aircraft, int totalAircraftSeats, int flightMileage) {
@@ -30,7 +30,11 @@ private Integer id;
         this.aircraft = aircraft;
         this.totalAircraftSeats = totalAircraftSeats;
         this.flightMileage = flightMileage;
-        this.flightId = ++idCounter;
+       // this.flightId = ++idCounter;
+    }
+
+    public Flight() {
+
     }
 
     // Getter and setter methods
